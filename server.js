@@ -19,13 +19,17 @@ app.use(express.json());
 app.use(cors());
 
 // api endpoints
-app.use('/api/user',userRouter);
-app.use('/api/product',productRouter);
-app.use('/api/cart',cartRouter);
+app.use("/api/user", userRouter);
+app.use("/api/product", productRouter);
+app.use("/api/cart", cartRouter);
 
 // api end points
 app.get("/", (req, res) => {
-  res.send("API Working");
+  try {
+    res.send("API Working");
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.listen(port, () => console.log("Server started on port : " + port));

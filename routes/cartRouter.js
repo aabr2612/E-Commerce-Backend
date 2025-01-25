@@ -10,6 +10,6 @@ const cartRouter = express.Router();
 
 cartRouter.post("/get", getUserCart);
 cartRouter.post("/add", addToCart);
-cartRouter.post("update", authUser, updateCart);
+cartRouter.post("/update", authUser, updateCart);
 
 export default cartRouter;
