@@ -16,7 +16,7 @@ const adminAuth = async (req, res, next) => {
       ) {
         return res.json({
           success: false,
-          message: "Access denied! Login Again",
+          message: "Access denied! Invalid Credentials",
         });
       } else {
         next();
