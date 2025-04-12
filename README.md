@@ -142,29 +142,28 @@ e-commerce-admin-backend/
 ## API Endpoints
 
 ### User Routes (`/api/user`)
-- **POST /register**: Register a new user (email, password, name).
-- **POST /login**: Log in a user and return a JWT token.
-- **POST /admin**: Admin login with hardcoded credentials.
+- POST /register: Register a new user (email, password, name).
+- POST /login: Log in a user and return a JWT token.
+- POST /admin: Admin login with hardcoded credentials.
 
 ### Product Routes (`/api/product`)
-- **POST /add** (Admin): Add a product with images (multipart/form-data).
-- **POST /remove** (Admin): Delete a product by ID.
-- **POST /single**: Get a single product by ID.
-- **GET /list**: List all products.
+- POST /add (Admin): Add a product with images (multipart/form-data).
+- POST /remove (Admin): Delete a product by ID.
+- POST /single: Get a single product by ID.
+- GET /list: List all products.
 
 ### Cart Routes (`/api/cart`)
-- **POST /add** (User): Add an item to the cart (itemId, size).
-- **POST /update** (User): Update cart item quantity.
-- **POST /get** (User): Retrieve user's cart data.
+- POST /add (User): Add an item to the cart (itemId, size).
+- POST /update (User): Update cart item quantity.
+- POST /get (User): Retrieve user's cart data.
 
 ### Order Routes (`/api/order`)
-- **POST /place** (User): Place an order with COD.
-- **POST /stripe** (User): Place an order with Stripe payment.
-- **POST /razorpay** (User): Place an order with Razorpay (incomplete).
-- **POST /verifyStripe** (User): Verify Stripe payment and update order.
-- **POST /userorders** (User): Get orders for a specific user.
-- **POST /list** (Admin): List all orders.
-- **POST /status** (Admin): Update an order's status.
+- POST /place (User): Place an order with COD.
+- POST /stripe (User): Place an order with Stripe payment.
+- POST /verifyStripe (User): Verify Stripe payment and update order.
+- POST /userorders (User): Get orders for a specific user.
+- POST /list (Admin): List all orders.
+- POST /status (Admin): Update an order's status.
 
 ## Contributing
   1. Fork the repository.
