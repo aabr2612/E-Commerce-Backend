@@ -1,6 +1,6 @@
 # E-Commerce Backend
 
-A robust backend for an e-commerce panel, built with Node.js and Express.js to manage products, orders, user authentication, and cart functionality. This API supports an admin panel frontend and frontend panel, enabling administrators to handle inventory, process orders, and manage user data securely. It integrates with MongoDB for data storage, Cloudinary for image uploads, and payment gateways like Stripe and Razorpay for seamless transactions.
+A robust backend for an e-commerce panel, built with Node.js and Express.js to manage products, orders, user authentication, and cart functionality. This API supports an admin panel frontend and frontend panel, enabling administrators to handle inventory, process orders, and manage user data securely. It integrates with MongoDB for data storage, Cloudinary for image uploads, and payment gateways like Stripe for seamless transactions.
 
 ## Table of Contents
 - [Features](#features)
@@ -20,7 +20,7 @@ A robust backend for an e-commerce panel, built with Node.js and Express.js to m
   - List all products or fetch a single product by ID.
   - Remove products from the inventory with admin authentication.
 - **Order Management**:
-  - Support for placing orders via Cash on Delivery (COD), Stripe, or Razorpay.
+  - Support for placing orders via Cash on Delivery (COD) or Stripe.
   - View all orders (admin) or user-specific orders.
   - Update order statuses (e.g., Order Placed, Shipped, Delivered) by admins.
   - Verify Stripe payments and clear user cart upon successful transactions.
@@ -56,7 +56,6 @@ A robust backend for an e-commerce panel, built with Node.js and Express.js to m
 - MongoDB Atlas account or local MongoDB instance
 - Cloudinary account for image storage
 - Stripe account with a secret key
-- Razorpay account (optional, as implementation is incomplete)
 - Environment variables configured in a `.env` file
 
 ## Installation
