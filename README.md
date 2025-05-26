@@ -138,7 +138,7 @@ e-commerce-admin-backend/
     ├── package.json            # Dependencies and scripts
     ├── server.js               # Main server entry point
     └── README.md               # Project documentation
-
+```
 ## API Endpoints
 
 ### User Routes (`/api/user`)
